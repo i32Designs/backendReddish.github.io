@@ -1,32 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ダウンロードサイト</title>
+  <title>Reddish Updates</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <header>
-    <h1>ダウンロードサイト</h1>
+    <h1>アップデート</h1>
   </header>
-  <div class="container">
-    <div class="download-item">
-      <img src="file-icon.png" alt="File Icon">
-      <div>
-        <h2>ファイル1</h2>
-        <a href="file1.zip" class="download-link">ダウンロード</a>
-        <a href="update1.txt" class="update-link">アップデート内容</a>
-      </div>
-    </div>
-    <div class="download-item">
-      <img src="file-icon.png" alt="File Icon">
-      <div>
-        <h2>ファイル2</h2>
-        <a href="file2.zip" class="download-link">ダウンロード</a>
-        <a href="update2.txt" class="update-link">アップデート内容</a>
-      </div>
-    </div>
+  <div class="container" id="update-container">
+    <!-- Update items will be dynamically added here -->
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
