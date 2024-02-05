@@ -1,7 +1,7 @@
 // Example update data
 const updates = [
     { 
-        file: "バージョン 0.8.3 (最新版)",
+        file: "バージョン 0.8.3 Fix1 (最新版)",
         downloadLink: "https://drive.usercontent.google.com/download?id=1qM6aW9Au-a7MXaOwvSX3gn9HCldS-_Tt&export=download&authuser=2",
         updateLink: "./info/0.8.3.html" 
     },
