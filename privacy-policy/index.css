@@ -5,12 +5,19 @@ body {
     line-height: 1.6;
 }
 
-header, main {
+main {
     margin: 20px;
 }
 
+header {
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 h1 {
-    color: #b22222;
+    color: #ffffff;
     text-align: center;
 }
 
