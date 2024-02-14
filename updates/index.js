@@ -1,8 +1,13 @@
 // Example update data
 const updates = [
     { 
-        file: "バージョン 0.8.3 Fix1 (最新版)",
-        downloadLink: "https://drive.usercontent.google.com/download?id=1qM6aW9Au-a7MXaOwvSX3gn9HCldS-_Tt&export=download&authuser=2",
+        file: "バージョン 0.8.4 (最新版)",
+        downloadLink: "https://drive.usercontent.google.com/download?id=1ls45cjqWbk08ntjmlJXcCmXQ9Laf6Crm&export=download&authuser=0",
+        updateLink: "./info/0.8.3.html" 
+    },
+    { 
+        file: "バージョン 0.8.3 Fix1",
+        downloadLink: "null",
         updateLink: "./info/0.8.3.html" 
     },
 ];
@@ -23,11 +28,14 @@ function createUpdateElement(update) {
     title.textContent = update.file;
     info.appendChild(title);
 
-    const downloadLink = document.createElement("a");
-    downloadLink.href = update.downloadLink;
-    downloadLink.classList.add("download-link");
-    downloadLink.textContent = "ダウンロード (3GB)";
-    info.appendChild(downloadLink);
+    if (update.downloadLink != "null") 
+    {
+        const downloadLink = document.createElement("a");
+        downloadLink.href = update.downloadLink;
+        downloadLink.classList.add("download-link");
+        downloadLink.textContent = "ダウンロード (3GB)";
+        info.appendChild(downloadLink);
+    }
 
     const updateLink = document.createElement("a");
     updateLink.href = update.updateLink;
